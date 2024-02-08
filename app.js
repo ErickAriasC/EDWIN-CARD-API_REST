@@ -1,4 +1,3 @@
-const container = document.querySelector('main')
 
 const btnGetCard = document.querySelector('.get_card')
 
@@ -13,6 +12,8 @@ function getAPI () {
 
 function getCard(Simpson) {
      const {quote, image, character} = Simpson; 
+     const containerCard = document.querySelector('.containerCard')
+     containerCard.style.display= 'flex';
 
      const imgCard = document.querySelector('#img')
      imgCard.src = image
